@@ -3,11 +3,11 @@
 
 ## Atualize os seus dados
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome: Edson Luiz Barbosa
+- Matrícula: 21.1.8145
+- Curso: Sistemas de Informação
+- Semestre/Ano correntes: 21.1 / 2023
+- Link para o seu GitHub: [Edson-Luiz](https://github.com/Edson-Luiz)
 
 ## [Projeto final:](./Projeto/README.md)
 
