@@ -1,0 +1,36 @@
+body{
+    background-color: #3eaba7;
+}
+.container {
+    text-align: left;
+    margin: 10% auto;
+    width: 200px;
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    
+}
+
+.button{
+    border-radius: 30px;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: #e0e3e9;
+}
+
+.form_content > div > input{
+    border-radius: 0.4em;
+    border-color: #7bcac8;
+
+    
+}
+
+.checkbox_form_content_label{
+
+}
