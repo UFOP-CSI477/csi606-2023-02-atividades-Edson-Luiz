@@ -7,12 +7,13 @@ import { tiposRouter } from './routes/tipos.js';
 import { pessoasRouter } from './routes/pessoas.js';
 import { doacoesRouter } from './routes/doacoes.js';
 import { locaisRouter } from './routes/locais.js';
+import cors from 'cors'
 
 const server = express();
 const PORT = 5000
 
 server.use(express.json())
-
+server.use(cors())
 // Routes
 server.get('/', (request, response) => {
     response.json({
@@ -33,6 +34,7 @@ server.use(tiposRouter)
 server.use(pessoasRouter)
 server.use(doacoesRouter)
 server.use(locaisRouter)
+
 
 
 server.listen(PORT, () => {
