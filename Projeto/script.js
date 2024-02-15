@@ -1,5 +1,3 @@
-// Dependendo do tipo de HTML que está chamando o script, 
-// a fonte das perguntas pode ser diferente
 import questionsRedes from "./quest/questionRedes.js";
 import questionsSI from "./quest/questionsSI.js";
 import questions from "./quest/questions.js"
@@ -45,9 +43,21 @@ btnRestart.onclick = () => {
   loadQuestion();
 };
 
+// Defina um array para armazenar as respostas erradas
+let wrongAnswers = [];
+
 function nextQuestion(e) {
-  if (e.target.getAttribute("data-correct") === "true") {
+  const answerButton = e.target;
+  const isCorrect = answerButton.getAttribute("data-correct") === "true";
+
+  if (isCorrect) {
     questionsCorrect++;
+  } else {
+    // Se a resposta estiver errada, armazene a questão e a resposta errada
+    wrongAnswers.push({
+      question: currentQuestions[currentIndex].question,
+      wrongAnswer: answerButton.textContent.trim()
+    });
   }
 
   if (currentIndex < currentQuestions.length - 1) {
@@ -60,9 +70,20 @@ function nextQuestion(e) {
 
 function finish() {
   textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${currentQuestions.length}`;
+  // Se houver respostas erradas, exiba-as
+  if (wrongAnswers.length > 0) {
+    const wrongAnswersContainer = document.querySelector(".wrong-answers");
+    wrongAnswersContainer.innerHTML = "<h3>Respostas Erradas:</h3>";
+    wrongAnswers.forEach((item, index) => {
+      const div = document.createElement("div");
+      div.textContent = `${index + 1}. ${item.question} - Resposta Errada: ${item.wrongAnswer}`;
+      wrongAnswersContainer.appendChild(div);
+    });
+  }
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
+
 
 function loadQuestion() {
   spnQtd.innerHTML = `${currentIndex + 1}/${currentQuestions.length}`;
