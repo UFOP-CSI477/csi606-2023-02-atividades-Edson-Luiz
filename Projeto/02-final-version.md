@@ -45,6 +45,6 @@ Este projeto faz parte das atividades desenvolvidas para a disciplina CSI606 - S
 
 ### 6. Referências
 <!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
-W3Schools. Disponível em: <https://www.w3schools.com/\>. Acesso em: <10/02/2024>.
-NOVATO, Douglas A. B. Um quiz app com HTML, CSS e JS. Medium, [S. l.], 12 mar. 2021. Disponível em: <https://douglasabnovato.medium.com/um-quiz-app-com-html-css-e-js-72f3f4a1b0e7\>. Acesso em: <10/02/2024>.
+W3Schools. Disponível em: <https://www.w3schools.com/\>. Acesso em: <10/02/2024>.<br>
+NOVATO, Douglas A. B. Um quiz app com HTML, CSS e JS. Medium, [S. l.], 12 mar. 2021. Disponível em: <https://douglasabnovato.medium.com/um-quiz-app-com-html-css-e-js-72f3f4a1b0e7\>. Acesso em: <10/02/2024>.<br>
 Universidade Federal de Ouro Preto. Desenvolvimento de uma aplicação web para simulados preparatórios de vestibular com enfoque no ENEM. Ouro Preto: [UFOP], <2023>. Disponível em: <https://www.monografias.ufop.br/handle/35400000/5525>. Acesso em: <08/02/2024>.
